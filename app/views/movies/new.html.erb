@@ -1,0 +1,18 @@
+<h1>New Movie</h1>
+
+<%= render 'form', movie: @movie %>
+<div class="container">
+  <%= form_for @movie do |f| %>
+    <%= f.text_field :title, label: "Movie" %>
+    <h1> </h1>
+    <%= f.text_field :description %>
+    <h1> </h1>
+    <%= f.text_field :duration %>
+    <h1> </h1>
+    <%= f.text_field :release_date %>
+    <h1> </h1>
+
+    <%= f.button :submit %>
+  <% end %>
+</div>
+<%= link_to 'Back', movies_path %>

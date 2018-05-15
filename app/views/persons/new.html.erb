@@ -1,0 +1,20 @@
+<%= form_tag("/persons/create", method: "POST" ) do  %>
+  <h1>Create New Person</h1>
+
+  <%= label_tag(:q, "Name") %>
+  <%= text_field_tag(:q) %>
+  <%= label_tag(:q, "Last Name") %>
+  <%= text_field_tag(:q) %>
+  <%= label_tag(:q, "Birth Date") %>
+  <%= text_field_tag(:q) %>
+  <%= label_tag(:q, "Description") %>
+  <%= text_field_tag(:q) %>
+
+  <form action="">
+    <div> </div>
+    <input type="radio" name="role" value="actor"> Actor<br>
+    <input type="radio" name="role" value="director"> Director<br>
+  </form>
+  <%= submit_tag("Create") %>
+
+<%end%>
